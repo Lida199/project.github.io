@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Korean Restaurant Website">
+    <meta name="keywords" content="Korean Food">
+    <meta name="author" content="Lida Shubitidze">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Restaurant</title>
+    <link rel="stylesheet" href="../styles/reservation.css">
+    <script src="https://kit.fontawesome.com/db4c345223.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <div id="burger" class="burger" onclick="burger()">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
+            <a href="../index.html"><span id="logo">Korean </span><br>
+                Restaurant</a>
+            <nav>
+                <ul>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./reservation.html">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="upper-text">
+            <h1>Traditional <br>
+                <span>Korean Food</span>
+            </h1>
+            <div id="buttons">
+                <a href="./menu.html" id="right">Browse Menu</a>
+            </div>
+        </div>
+    </header>
+    <section id="form">
+        <div id="container-for-form">
+            <div id="for-the-image">
+            </div>
+            <form>
+                <h2>Booking place for your diner!</h2>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Surname">
+                <input type="tel" placeholder="Your Phone Number">
+                <input type="text" placeholder="Time">
+                <label id="title">Select Your Dining Space:</label>
+                <div class="radio">
+                    <input type="radio" id="two" name="amount" value="2 Person">
+                    <label for="two">2 Person</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="four" name="amount" value="4 Person">
+                    <label for="four">4 Person</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="six" name="amount" value="6 Person">
+                    <label for="six">6 Person</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="eight" name="amount" value="8 Person">
+                    <label for="eight">8 Person</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="ten" name="amount" value="10 Person">
+                    <label for="ten">10 Person</label>
+                </div>
+                <button type="button">Book now</button>
+                <p>Verify your booking info from your phone</p>
+            </form>
+        </div>
+    </section>
+    
+
+
+    <footer>
+        <div id="container-for-footer">
+            <div>
+                <h6 id="different-text">Korean <br>Restaurant</h6>
+            </div>
+            <div id="display-none1">
+                <h6>Quick Links</h6>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./reservation.html">Book Now</a></li>
+                </ul>
+            </div>
+            <div id="hours">
+                <h6>Info</h6>
+                <p>Mon-Fri 09:00-21:00</p>
+                <p>Sat-Sun 11:00-23:00</p>
+                <address>59 Copthrone Way<br>
+                Camghouran,UK</address>
+            </div>
+            <div>
+                <h6>Follow Us</h6>
+                <div id="social">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+
+</html>

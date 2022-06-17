@@ -1,0 +1,1346 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/background.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+header .burger {
+  width: 50px;
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  display: none;
+}
+
+header .burger span {
+  display: block;
+  height: 2px;
+  background-color: #E6890B;
+  margin-bottom: 10px;
+}
+
+header #container {
+  width: 80%;
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #container > a {
+  font-family: 'Fascinate', cursive;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: white;
+}
+
+header #container #logo {
+  color: #E6890B;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header li {
+  margin-left: 50px;
+}
+
+header li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #E6890B;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header li a::after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  width: 75%;
+  height: 2px;
+  margin-top: 4px;
+  background-color: #E6890B;
+}
+
+header li a:hover::after {
+  visibility: visible;
+}
+
+header #upper-text {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  padding-top: 120px;
+  font-family: 'Fascinate', cursive;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+header h1 span {
+  color: #E6890B;
+}
+
+header #left {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 2rem;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 30px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header #left:hover {
+  background-color: black;
+  color: white;
+}
+
+header #right {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 2rem;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header #right:hover {
+  color: black;
+}
+
+#about {
+  height: 700px;
+  width: 100%;
+  background-color: #E6890B;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  padding-top: 170px;
+}
+
+#about > div {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about #left-side {
+  width: 450px;
+  height: 450px;
+  background-image: url(../assets/chef.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#about #right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 450px;
+  height: 450px;
+}
+
+#about #right-side h2 {
+  font-family: "Fascinate", cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#about #right-side h3 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 15px;
+}
+
+#about #right-side p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 30px;
+}
+
+#about #right-side a {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+#about #right-side .btn {
+  width: 200px;
+  background-color: white;
+  border: none;
+  z-index: 1;
+  padding: 5px 0 5px 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#about #right-side .btn:hover {
+  background-color: black;
+}
+
+#about #right-side .btn:hover a {
+  color: white;
+}
+
+#menu {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0px auto 0 auto;
+  padding-top: 15px;
+}
+
+#menu h4 {
+  font-family: "Fascinate", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  margin-bottom: 30px;
+}
+
+#menu h4 a {
+  color: black;
+}
+
+#menu #titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+#menu #main-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: black;
+}
+
+#menu #titles p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: black;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+#menu #titles p:first-child {
+  color: #E6890B;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+#menu #maincouse,
+#menu #desserts,
+#menu #beverages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#menu .maincourse-items,
+#menu .desserts-items,
+#menu .beverages-items {
+  width: 31%;
+  max-width: 500px;
+  border-radius: 5px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+#menu .maincourse-items p,
+#menu .desserts-items p,
+#menu .beverages-items p {
+  padding-top: 15px;
+  padding-left: 5px;
+  color: #E6890B;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#menu .image1 {
+  background-image: url(../assets/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .image2 {
+  background-image: url(../assets/kimbap.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .image3 {
+  background-image: url(../assets/mandu.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .image4 {
+  background-image: url(../assets/bingsu.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .image5 {
+  background-image: url(../assets/hotteok.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .image6 {
+  background-image: url(../assets/bungeoppang.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .image7 {
+  background-image: url(../assets/soju.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .image8 {
+  background-image: url(../assets/makgeolli.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .image9 {
+  background-image: url(../assets/milkis.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu .for-image {
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+}
+
+#menu .image1:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#menu .image2:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/kimbap.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/kimbap.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#menu .image3:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/mandu.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/mandu.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#menu .image4:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/bingsu.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/bingsu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu .image5:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/hotteok.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/hotteok.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu .image6:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/bungeoppang.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/bungeoppang.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu .image7:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/soju.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/soju.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu .image8:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/makgeolli.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/makgeolli.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu .image9:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../assets/milkis.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/milkis.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu #desserts,
+#menu #beverages {
+  display: none;
+}
+
+#menu button {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #E6890B;
+  width: 200px;
+  display: block;
+  margin: 30px auto;
+  padding: 5px 0 5px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu button a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #E6890B;
+}
+
+#menu button:hover {
+  background-color: #E6890B;
+}
+
+#menu button:hover a {
+  color: white;
+}
+
+#book-now {
+  width: 100%;
+  height: 400px;
+  padding-top: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/book.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/book.png);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#book-now h5 {
+  padding-top: 70px;
+  font-family: "Fascinate", cursive;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: white;
+  text-align: center;
+}
+
+#book-now h6 {
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #E6890B;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+#book-now button {
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  padding: 5px 0 5px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#book-now button a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #E6890B;
+}
+
+#book-now button:hover {
+  background-color: #E6890B;
+}
+
+#book-now button:hover a {
+  color: white;
+}
+
+#reviews {
+  width: 100%;
+  height: 700px;
+  background-color: #f6f6f6;
+  position: relative;
+}
+
+#reviews h5 {
+  padding-top: 20px;
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-family: "Fascinate", cursive;
+  color: black;
+}
+
+#reviews #absolute {
+  position: absolute;
+  top: 90px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#reviews #absolute2 {
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  background-color: #FEB04D;
+}
+
+#reviews #container-for-reviews {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reviews #review1, #reviews #review2 {
+  padding: 20px 30px 20px 30px;
+  width: 40%;
+  max-width: 500px;
+  height: 300px;
+  background-color: white;
+}
+
+#reviews .img-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#reviews .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#reviews .icon img {
+  width: 100%;
+  height: auto;
+}
+
+#reviews .info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 30px;
+}
+
+#reviews .info h6 {
+  color: #E6890B;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+#reviews .info p {
+  color: #686766;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+#reviews .text {
+  margin-top: 30px;
+  color: #353434;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  height: 300px;
+  padding-top: 50px;
+  background-color: #E6890B;
+}
+
+footer #container-for-footer {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer #container-for-footer > div {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+}
+
+footer #container-for-footer h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #201f1f;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 25px;
+}
+
+footer #container-for-footer #different-text {
+  font-family: "Fascinate", cursive;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+footer #container-for-footer li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+footer #container-for-footer li a {
+  color: black;
+}
+
+footer #container-for-footer li a:hover {
+  color: #353434;
+}
+
+footer #container-for-footer #hours p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+}
+
+footer #container-for-footer address {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: underline;
+  font-style: normal;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+}
+
+footer #container-for-footer #social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer #container-for-footer #social i {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 300px) {
+  #about #left-side {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+  #about #right-side {
+    width: 100%;
+    height: auto;
+  }
+  #about #right-side h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  #about #right-side h3 {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-align: center;
+  }
+  #about #right-side p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-left: 15px;
+  }
+  #about #right-side .btn {
+    margin: 0 auto;
+    width: 150px;
+  }
+  #about {
+    height: 800px;
+  }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 576px) {
+  #about #left-side {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px;
+  }
+  #about {
+    height: 900px;
+  }
+  #about #right-side {
+    width: 100%;
+    height: auto;
+  }
+  #about #right-side h2 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  #about #right-side h3 {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-align: center;
+  }
+  #about #right-side p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 0 15px 0 15px;
+    width: auto;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  #about #right-side .btn {
+    margin: 20px auto;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header .burger {
+    top: 40px;
+    right: 15px;
+    display: block;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .change #span2 {
+    visibility: hidden;
+  }
+  .change #span1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .change #span3 {
+    margin-top: -23px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header #container {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header #container.new {
+    height: 100vh;
+    background-color: #686766;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header #container.new ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #container.new ul li a:hover::after {
+    visibility: hidden;
+  }
+  header #container > a {
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+  header #container ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header #container ul li {
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+  header #upper-text {
+    width: 100%;
+    padding-left: 15px;
+  }
+  header h1 {
+    padding-top: 100px;
+    font-size: 2.6rem;
+    line-height: 3.1rem;
+    margin-bottom: 40px;
+  }
+  #buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header #left {
+    padding: 0.5rem 1rem;
+    width: 150px;
+    margin-bottom: 30px;
+  }
+  header #right {
+    padding: 0.5rem 1rem;
+    width: 150px;
+  }
+  #about > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #menu h4 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  #menu {
+    width: 100%;
+    padding-left: 15px;
+  }
+  #menu #titles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #menu #titles p {
+    margin-bottom: 15px;
+  }
+  #menu #maincouse, #menu #desserts, #menu #beverages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #menu .maincourse-items, #menu .desserts-items, #menu .beverages-items {
+    width: 95%;
+    max-width: 450px;
+    margin-bottom: 15px;
+  }
+  #menu button {
+    width: 150px;
+  }
+  #book-now h5 {
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+  }
+  #book-now h6 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+  #book-now button {
+    width: 150px;
+  }
+  #reviews {
+    padding-bottom: 30px;
+    height: auto;
+  }
+  #reviews #absolute img {
+    display: none;
+  }
+  #reviews #absolute2 {
+    display: none;
+  }
+  #reviews #container-for-reviews {
+    width: 100%;
+  }
+  #reviews h5 {
+    margin-bottom: 40px;
+  }
+  #reviews #container-for-reviews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #reviews #review1, #reviews #review2 {
+    width: 95%;
+    margin-bottom: 25px;
+    max-width: 450px;
+    height: auto;
+  }
+  #reviews .info h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  footer {
+    height: 250px;
+    padding-top: 30px;
+  }
+  footer #container-for-footer {
+    width: 100%;
+    padding-left: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer #display-none1, #hours {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 799px) {
+  header .burger {
+    top: 40px;
+    right: 40px;
+    display: block;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .change #span2 {
+    visibility: hidden;
+  }
+  .change #span1 {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .change #span3 {
+    margin-top: -23px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header #container {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header #container.new {
+    height: 100vh;
+    background-color: #686766;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header #container.new ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #container.new ul li a:hover::after {
+    visibility: hidden;
+  }
+  header #container > a {
+    margin-left: 40px;
+    padding-top: 10px;
+  }
+  header #container ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header #container ul li {
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+  header #upper-text {
+    width: 100%;
+    padding-left: 40px;
+  }
+  header h1 {
+    padding-top: 100px;
+    font-size: 3rem;
+    line-height: 3.4rem;
+    margin-bottom: 40px;
+  }
+  header #left {
+    padding: 0.7rem 1.4rem;
+    width: 150px;
+  }
+  header #right {
+    padding: 0.7rem 1.4rem;
+    width: 150px;
+  }
+  #about > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #about {
+    height: 1100px;
+  }
+  #about #right-side {
+    height: auto;
+    margin-top: 20px;
+  }
+  #menu #titles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #menu {
+    width: 100%;
+    padding-left: 40px;
+  }
+  #menu h4 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  #menu #titles p {
+    margin-bottom: 15px;
+  }
+  #menu #maincouse, #menu #desserts, #menu #beverages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu .maincourse-items, #menu .desserts-items, #menu .beverages-items {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  #reviews {
+    padding-bottom: 30px;
+    height: auto;
+  }
+  #reviews #absolute img {
+    display: none;
+  }
+  #reviews #absolute2 {
+    top: 150px;
+    width: 500px;
+  }
+  #reviews #container-for-reviews {
+    width: 100%;
+  }
+  #reviews h5 {
+    margin-bottom: 40px;
+  }
+  #reviews #container-for-reviews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #reviews #review1, #reviews #review2 {
+    margin-bottom: 25px;
+    width: 450px;
+    height: auto;
+  }
+  #reviews .info h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  footer {
+    height: auto;
+    padding-top: 30px;
+  }
+  footer #container-for-footer {
+    width: 100%;
+    padding: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer #display-none1 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+  header #container, header #upper-text {
+    width: 90%;
+  }
+  #about > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  #about {
+    height: 1150px;
+  }
+  #about #right-side {
+    height: auto;
+    margin-top: 40px;
+  }
+  #about #left-side {
+    width: 500px;
+    height: 500px;
+  }
+  #menu {
+    width: 90%;
+  }
+  #reviews {
+    height: auto;
+  }
+  #reviews #absolute2 {
+    width: 400px;
+  }
+  #reviews #container-for-reviews {
+    width: 90%;
+  }
+  #reviews h5 {
+    margin-bottom: 40px;
+  }
+  #reviews #container-for-reviews {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  #reviews #review1, #reviews #review2 {
+    margin-bottom: 25px;
+    width: 70%;
+    max-width: 450px;
+    height: auto;
+  }
+  footer {
+    height: auto;
+    padding-top: 30px;
+  }
+  footer #container-for-footer {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  #about > div {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #reviews #review1, #reviews #review2 {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  #reviews #absolute2 {
+    width: 1100px;
+  }
+}

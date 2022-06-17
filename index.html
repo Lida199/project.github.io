@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Korean Restaurant Website">
+    <meta name="keywords" content="Korean Food">
+    <meta name="author" content="Lida Shubitidze">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Restaurant</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/db4c345223.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <div id="burger" class="burger" onclick="burger()">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
+            <a href="./index.html"><span id="logo">Korean </span><br>
+                Restaurant</a>
+            <nav>
+                <ul>
+                    <li><a href="./common/menu.html">Menu</a></li>
+                    <li><a href="./common/about.html">About Us</a></li>
+                    <li><a href="./common/reservation.html">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="upper-text">
+            <h1>Traditional <br>
+                <span>Korean Food</span>
+            </h1>
+            <div id="buttons">
+                <a href="./common/reservation.html" id="left">Reserve Table</a>
+                <a href="./common/menu.html" id="right">Browse Menu</a>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div>
+            <div id="left-side">
+            </div>
+            <div id="right-side">
+                <h2>Head Chef</h2>
+                <h3>Linda Lee</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia libero veritatis facilis porro
+                    vitae facere aliquid perferendis nam aperiam!</p>
+                <button type="button" class="btn"><a href="./common/about.html">View More</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h4><a href="./common/menu.html">Menu</a></h4>
+        <div id="titles">
+            <p class="title main-text" onclick="chooseMainCourse()">Main Course</p>
+            <p class="title" onclick="chooseDessert()">Desserts</p>
+            <p class="title" onclick="chooseBeverage()">Beverages</p>
+        </div>
+        <div id="change">
+            <div id="maincouse">
+                <div class="maincourse-items item1">
+                    <div class="for-image image1"></div>
+                    <p>Bibimbap</p>
+                </div>
+                <div class="maincourse-items">
+                    <div class="for-image image2"></div>
+                    <p>Kimbap</p>
+                </div>
+                <div class="maincourse-items">
+                    <div class="for-image image3"></div>
+                    <p>Mandu Dumplings</p>
+                </div>
+            </div>
+            <div id="desserts">
+                <div class="desserts-items">
+                    <div class="for-image image4"></div>
+                    <p>Bingsu</p>
+                </div>
+                <div class="desserts-items">
+                    <div class="for-image image5"></div>
+                    <p>Hotteok</p>
+                </div>
+                <div class="desserts-items">
+                    <div class="for-image image6"></div>
+                    <p>Bungeoppang</p>
+                </div>
+            </div>
+            <div id="beverages">
+                <div class="beverages-items">
+                    <div class="for-image image7"></div>
+                    <p>Soju</p>
+                </div>
+                <div class="beverages-items">
+                    <div class="for-image image8"></div>
+                    <p>Makgeolli</p>
+                </div>
+                <div class="beverages-items">
+                    <div class="for-image image9"></div>
+                    <p>Milkis</p>
+                </div>
+            </div>
+        </div>
+        <button><a href="./common/menu.html">View All</a></button>
+    </section>
+    <section id="book-now">
+        <h5>Interested?</h5>
+        <h6>Reserve a table for yourself and for your loved ones.</h6>
+        <button type="button"><a href="./common/reservation.html">Reserve Now</a></button>
+    </section>
+    <section id="reviews">
+        <div id="absolute"><img src="./assets/absolute.jpg" alt="bibimbap"></div>
+        <div id="absolute2"></div>
+        <h5>Our Happy Customers</h5>
+        <div id="container-for-reviews">
+            <div id="review1">
+                <div class="img-space">
+                    <div class="icon">
+                        <img src="./assets/icon.png" alt="customer">
+                    </div>
+                    <div class="info" >
+                        <h6>Hillary Banks</h6>
+                        <p>Logistics</p>                       
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet voluptate ipsam non 
+                    soluta. Dolores atque doloribus, quis sint harum, dignissimos est ut nobis veritatis voluptatem, 
+                    non odit reiciendis sed.
+                </div>
+            </div>
+            <div id="review2">
+                <div class="img-space">
+                    <div class="icon">
+                        <img src="./assets/icon.png" alt="customer">
+                    </div>
+                    <div class="info">
+                        <h6>Hillary Banks</h6>
+                        <p>Logistics</p>                        
+                    </div>
+                </div>
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet voluptate ipsam non 
+                    soluta. Dolores atque doloribus, quis sint harum, dignissimos est ut nobis veritatis voluptatem, 
+                    non odit reiciendis sed.
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="container-for-footer">
+            <div>
+                <h6 id="different-text">Korean <br>Restaurant</h6>
+            </div>
+            <div id="display-none1">
+                <h6>Quick Links</h6>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./common/menu.html">Menu</a></li>
+                    <li><a href="./common/about.html">About Us</a></li>
+                    <li><a href="./common/reservation.html">Book Now</a></li>
+                </ul>
+            </div>
+            <div id="hours">
+                <h6>Info</h6>
+                <p>Mon-Fri 09:00-21:00</p>
+                <p>Sat-Sun 11:00-23:00</p>
+                <address>59 Copthrone Way<br>
+                Camghouran,UK</address>
+            </div>
+            <div>
+                <h6>Follow Us</h6>
+                <div id="social">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
